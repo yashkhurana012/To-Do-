@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #be59d0, #1e3a58); /* Changed from solid #222 to a gradient */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    max-width: 480px; /* Slightly increased max width */
+    background: linear-gradient(135deg, #c150d3, #5b548a); /* Enhanced gradient for a fresher look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Added smooth shadow for depth */
+    color: #fff;
+    margin: 50px auto;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px; /* Added gap for better spacing */
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 12px 20px; /* Adjusted padding for balance */
+    height: 55px; /* Reduced height slightly */
+    border-radius: 30px;
+    flex: 1;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); /* Added subtle inner shadow */
+    transition: background 0.3s ease;
+}
+
+.search input:focus {
+    background: #dffaf6; /* Highlight input when focused */
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: linear-gradient(135deg, #c264b4, #cdc5c3); /* New gradient for button */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 154, 158, 0.4); /* Glow effect */
+    transition: transform 0.2s ease;
+}
+
+.search button:hover {
+    transform: scale(1.1); /* Slight hover zoom */
+}
+
+.search button img {
+    width: 18px; /* Increased icon size for better visibility */
+}
+
+.weather-icon {
+    width: 180px; /* Slightly larger icon */
+    margin-top: 25px;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2)); /* Added shadow for icons */
+}
+
+.weather h1 {
+    font-size: 75px; /* Adjusted font size */
+    font-weight: 600; /* Increased weight for better prominence */
+}
+
+.weather h2 {
+    font-size: 40px; /* Slightly reduced size for balance */
+    font-weight: 400;
+    margin-top: 5px;
+    color: #dffaf6; /* Added subtle color change for hierarchy */
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 40px; /* Reduced margin for better spacing */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px; /* Improved spacing between icon and text */
+}
+
+.col img {
+    width: 35px; /* Slightly smaller icon */
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2)); /* Icon shadow for depth */
+}
+
+.humidity, .wind {
+    font-size: 24px; /* Reduced font size for alignment */
+    margin-top: -3px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #4d2427; /* Changed to light red for visibility */
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: none;
+}
